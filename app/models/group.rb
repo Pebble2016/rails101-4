@@ -1,3 +1,3 @@
 class Group < ApplicationRecord
-  dalidates :title, presevce: true
+  validates :title, presence: true
 end
