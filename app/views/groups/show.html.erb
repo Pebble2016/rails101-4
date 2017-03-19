@@ -1,6 +1,6 @@
-<div class="col-md-2">
+<div class="col-md-12">
   <div class="group">
-    <%= link_to("Write a Post", new_group_post_path(@group), class: "btn btn-primary pull_right") %>
+    <%= link_to("Write a Post", new_group_post_path(@group), class: "btn btn-default pull-right") %>
     <% if current_user && current_user == @group.user %>
       <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary pull-right") %>
     <% end %>
@@ -11,9 +11,9 @@
   <table class="table">
     <thead>
       <tr>
-        <td>文章内容</td>
-        <td>发表者</td>
-        <td>发表时间</td>
+        <th>文章内容</th>
+        <th>发表者</th>
+        <th>发表时间</th>
       </tr>
     </thead>
     <tbody>
@@ -25,4 +25,5 @@
         </tr>
       <% end %>
     </tbody>
+  </table>
 </div>
